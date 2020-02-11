@@ -5,6 +5,7 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     list-style-type: none;
+
   }
 
   .container::after,
@@ -12,24 +13,26 @@
       content: "";
       display: table;
       clear: both;
-  }
+ }
 
-
+html{
+    overflow-x: hidden;
+}
 .father-box{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 /* STILE ASIDE SPOTIFY */
 .spoti-aside{
     position: fixed;
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width: 200px;
+    width: 10%;
     height: calc(100vh - 100px);
     background-color: #040404;
-    z-index: 99;
 }
 
 /* stile unico per gli aside links */
@@ -42,21 +45,18 @@ aside a{
 }
 
 /* logo aside */
-#logo, .navbar-top{
-    margin-left: 10px;
+#logo, .navbar.top, .navbar.middle, .navbar.bottom{
+    margin: 20px 10px;
 }
 
 #logo img{
-    max-width: 100%;
-    height: 65px;
-    margin: 20px 0;
+    max-width: 90%;
 }
-
 /* prima sezione nav dell'aside */
 .navbar.top a{
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding-bottom: 20px;
     font-size: 15px;
 }
 
@@ -66,7 +66,6 @@ aside a{
 
 .navbar.top p{
     font-weight: 800;
-    padding-left: 10px;
 }
 /* seconda sez. nav dell'aside */
 .navbar.middle h4{
@@ -95,12 +94,12 @@ aside a{
 }
 
 #crea i{
-    font-size: 40px;
+    font-size: 30px;
     padding-right: 10px;
 }
 /* terza sez. nav dell'aside */
 .bottom-elements{
-    padding: 10px 0;
+    padding: 30px 0;
 }
 .navbar.bottom .install{
     display: flex;
@@ -113,7 +112,7 @@ aside a{
 .navbar.bottom .user{
     border-top: 2px solid  #b3b3b3;
     color: #ffffff;
-    padding: 12px 5px;
+    padding: 12px;
 }
 
 .navbar.bottom .user img{
@@ -126,11 +125,20 @@ aside a{
     line-height: 50px;
     padding-left: 10px;
 }
+
+.blocco1{
+    width: 100%;
+}
+.blocco2{
+    width: 100%;
+    margin-left: 10%;
+}
 /* STILE HEADER SPOTIFY */
 header{
     position: fixed;
-    width: 100%;
+    width: 90%;
     height: 100px;
+    margin-left: 10%;
     display: flex;
     justify-content: flex-end;
     background-color: #0b0b0b;
@@ -159,8 +167,16 @@ header{
 /* STILE MAIN SPOTIFY */
 main{
     width: 100%;
+    margin-top: 100px;
     display: flex;
     background-color: yellow;
+
+}
+
+.container.music{
+    display: flex;
+    margin: 0;
+
 }
 
 /* FOOTER SPOPTIFY */
@@ -171,4 +187,5 @@ footer {
    height:100px;
    width:100%;
    background-color: #282828;
+   overflow-y: hidden;
 }

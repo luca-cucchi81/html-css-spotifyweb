@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
   }
 
   .container::after,
@@ -10,3 +11,49 @@
       display: table;
       clear: both;
   }
+/*stile per tutti i link e liste*/
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/* STILE ASIDE SPOTIFY */
+.spoti-aside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    height: 100vh;
+    background-color: #040404
+}
+
+#logo, .navbar-first{
+    margin-left: 10px;
+}
+
+#logo img{
+    max-width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.navbar-first a{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #b3b3b3
+}
+.navbar-first a:hover{
+    color: #ffffff;
+}
+
+.navbar-first i{
+    font-size: 25px;
+}
+
+.navbar-first p{
+    font-weight: 700;
+    padding-left: 10px;
+}

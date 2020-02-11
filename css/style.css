@@ -14,6 +14,7 @@
       clear: both;
   }
 
+
 .father-box{
     display: flex;
     flex-direction: column;
@@ -33,6 +34,7 @@
 
 /* stile unico per gli aside links */
 aside a:hover{
+    cursor: pointer;
     color: #6ece3b;
 }
 aside a{
@@ -140,7 +142,6 @@ header{
 .container button {
   transition-duration: 0.8s;
   background-color: #0b0b0b;
-  border-color: #b3b3b3;
   border-radius: 50px;
   padding: 15px 30px;
   font-size: 16px;
@@ -149,9 +150,10 @@ header{
 }
 
 .container button:hover {
-  background-color: #6fca3b;
-  border-color: #6fca3b;
+  background-color: rgba(111, 202, 59, 0.6);
+  border-color: rgba(111, 202, 59, 0.6);
   color: #ffffff;
+  cursor: pointer;
 }
 
 /* STILE MAIN SPOTIFY */

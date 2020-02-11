@@ -4,63 +4,78 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/c42bf76b68.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <title>Spotify Web</title>
     </head>
     <body>
         <!-- ASIDE SPOTIFY -->
         <aside class="spoti-aside">
-            <div id="logo">
-                <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="logo">
+            <div class="top-elements">
+                <div id="logo">
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="logo">
+                </div>
+
+                <div class="navbar top">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-home"></i>
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                                <p>Cerca</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-book"></i>
+                                <p>La tua libreria</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar middle">
+                    <h4>Playlist</h4>
+                    <ul>
+                        <li>
+                            <a id="crea" href="#">
+                                <i class="fas fa-plus-square"></i>
+                                <p>Crea Playlist</p>
+                            </a>
+                        </li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="navbar top">
-                <ul>
-                    <li>
+            <div class="bottom-elements">
+                <div class="navbar bottom">
+                    <div class="install">
                         <a href="#">
-                            <i class="fas fa-home"></i>
-                            <p>Home</p>
+                        <i class="fas fa-arrow-circle-down"></i>
+                        <small>Installa app</small>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-search"></i>
-                            <p>Cerca</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-book"></i>
-                            <p>La tua libreria</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    </div>
 
-            <div class="navbar middle">
-                <h4>Playlist</h4>
-                <ul>
-                    <li>
-                        <a id="crea" href="#">
-                            <i class="fas fa-plus-square"></i>
-                            <p>Crea Playlist</p>
-                        </a>
-                    </li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                    <li><a href="#">Nome Playlist</a></li>
-                </ul>
+                    <div class="user">
+                            <a href="#">
+                                <img src="img/luca.jpg" alt="userlogo">
+                            </a>
+                        <p>Luca Cucchi</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="navbar bottom">
-                
-            </div>
-
         </aside>
     </body>
 </html>

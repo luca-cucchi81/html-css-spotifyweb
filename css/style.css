@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .container::after,
@@ -22,11 +22,13 @@ ul{
 .spoti-aside{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     width: 200px;
     height: 100vh;
     background-color: #040404
 }
+
 /* stile unico per gli aside links */
 aside a:hover{
     color: #ffffff;
@@ -59,7 +61,7 @@ aside a{
 }
 
 .navbar.top p{
-    font-weight: 900;
+    font-weight: 800;
     padding-left: 10px;
 }
 /* seconda sez. nav dell'aside */
@@ -76,7 +78,7 @@ aside a{
 
 .navbar.middle a{
     font-size: 15px;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: 0.5px;
 }
 
@@ -85,10 +87,38 @@ aside a{
     align-items: center;
     padding-bottom: 15px;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 #crea i{
     font-size: 40px;
     padding-right: 10px;
+}
+/* terza sez. nav dell'aside */
+.bottom-elements{
+    padding: 10px 0;
+}
+.navbar.bottom .install{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.navbar.bottom .user{
+    border-top: 2px solid  #b3b3b3;
+    color: #ffffff;
+    padding: 12px 5px;
+}
+
+.navbar.bottom .user img{
+    float: left;
+    border-radius: 50%;
+}
+
+.navbar.bottom .user p{
+    float: left;
+    line-height: 50px;
+    padding-left: 10px;
 }

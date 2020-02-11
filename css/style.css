@@ -14,24 +14,6 @@
   clear: both;
 }
 
-@media screen and (max-width: 768px) {
-     #hide-element{
-        display: none;
-    }
-
-    #logo{
-        display: none;
-    }
-    .spoti-aside{
-        display: flex;
-        justify-content: center;
-    }
-
-    .navbar.top i, #crea i, .navbar.bottom .install i{
-        padding-left: 10px;
-        font-size: 20px;
-    }
-}
 
 /* STILE ASIDE SPOTIFY */
 .spoti-aside{
@@ -144,7 +126,6 @@ aside a{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: cyan;
     float: left;
     overflow: hidden;
 }
@@ -183,9 +164,33 @@ header{
 /* STILE MAIN SPOTIFY */
 main{
     margin-top: 100px;
-    margin-left: 10%;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #121212;
 }
-/* FOOTER SPOPTIFY */
+
+.music-sections{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.selection{
+    padding: 15px 15px;
+    height: 100%;
+}
+.music-sections .selection:hover {
+    border-bottom: 6px solid #6ece3b;
+
+}
+
+.music-sections a{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #b3b3b3;
+}
+
+/* FOOTER SPOTIFY */
 footer {
    position:fixed;
    left:0;

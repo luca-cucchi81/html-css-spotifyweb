@@ -27,8 +27,16 @@ ul{
     height: 100vh;
     background-color: #040404
 }
+/* stile unico per gli aside links */
+aside a:hover{
+    color: #ffffff;
+}
+aside a{
+    color: #b3b3b3
+}
 
-#logo, .navbar-first{
+/* logo aside */
+#logo, .navbar-top{
     margin-left: 10px;
 }
 
@@ -38,22 +46,49 @@ ul{
     margin: 20px 0;
 }
 
-.navbar-first a{
+/* prima sezione nav dell'aside */
+.navbar.top a{
     display: flex;
     align-items: center;
     padding: 10px 0;
     font-size: 15px;
-    color: #b3b3b3
-}
-.navbar-first a:hover{
-    color: #ffffff;
 }
 
-.navbar-first i{
+.navbar.top i{
     font-size: 25px;
 }
 
-.navbar-first p{
-    font-weight: 700;
+.navbar.top p{
+    font-weight: 900;
     padding-left: 10px;
+}
+/* seconda sez. nav dell'aside */
+.navbar.middle h4{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.navbar.middle li{
+    padding: 5px 0;
+}
+
+.navbar.middle a{
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+#crea{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#crea i{
+    font-size: 40px;
+    padding-right: 10px;
 }

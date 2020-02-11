@@ -5,144 +5,160 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     list-style-type: none;
-
   }
 
-  .container::after,
-  .full-container::after {
-      content: "";
-      display: table;
-      clear: both;
- }
+.container::after,
+.full-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-html{
-    overflow-x: hidden;
+@media screen and (max-width: 768px) {
+     #hide-element{
+        display: none;
+    }
+
+    #logo{
+        display: none;
+    }
+    .spoti-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar.top i, #crea i, .navbar.bottom .install i{
+        padding-left: 10px;
+        font-size: 20px;
+    }
 }
-.father-box{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 /* STILE ASIDE SPOTIFY */
 .spoti-aside{
-    position: fixed;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 10%;
-    height: calc(100vh - 100px);
-    background-color: #040404;
+  width: 10%;
+  position: fixed;
+  height: calc(100vh - 100px);
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #040404;
+  z-index: 99;
 }
 
 /* stile unico per gli aside links */
 aside a:hover{
-    cursor: pointer;
-    color: #6ece3b;
+  cursor: pointer;
+  color: #6ece3b;
 }
 aside a{
-    color: #b3b3b3;
+  color: #b3b3b3;
 }
 
 /* logo aside */
 #logo, .navbar.top, .navbar.middle, .navbar.bottom{
-    margin: 20px 10px;
+  margin: 20px 10px;
 }
 
 #logo img{
-    max-width: 90%;
+  max-width: 90%;
 }
 /* prima sezione nav dell'aside */
 .navbar.top a{
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-    font-size: 15px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  font-size: 15px;
 }
 
 .navbar.top i{
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .navbar.top p{
-    font-weight: 800;
+  font-weight: 800;
+  padding-left: 10px;
 }
 /* seconda sez. nav dell'aside */
 .navbar.middle h4{
-    padding: 10px 0;
-    font-size: 18px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #ffffff;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .navbar.middle li{
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 .navbar.middle a{
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 #crea{
-    display: flex;
-    align-items: center;
-    padding-bottom: 15px;
-    font-size: 18px;
-    font-weight: 800;
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 #crea i{
-    font-size: 30px;
-    padding-right: 10px;
+  font-size: 30px;
+  padding-right: 10px;
 }
 /* terza sez. nav dell'aside */
 .bottom-elements{
-    padding: 30px 0;
+  padding: 30px 0;
 }
 .navbar.bottom .install{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 5px;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 5px;
+  padding-bottom: 10px;
 }
 
 .navbar.bottom .user{
-    border-top: 2px solid  #b3b3b3;
-    color: #ffffff;
-    padding: 12px;
+  border-top: 2px solid  #b3b3b3;
+  color: #ffffff;
+  padding: 12px 0;
 }
 
 .navbar.bottom .user img{
-    float: left;
-    border-radius: 50%;
+  float: left;
+  border-radius: 50%;
 }
 
 .navbar.bottom .user p{
-    float: left;
-    line-height: 50px;
-    padding-left: 10px;
+  float: left;
+  line-height: 50px;
+  padding-left: 10px;
 }
 
+/*-- BLOCCO HEADER E MAIN SPOTIFY */
 .blocco1{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: cyan;
+    float: left;
+    overflow: hidden;
 }
-.blocco2{
-    width: 100%;
-    margin-left: 10%;
-}
+
 /* STILE HEADER SPOTIFY */
 header{
     position: fixed;
-    width: 90%;
+    width: 100%;
     height: 100px;
-    margin-left: 10%;
     display: flex;
     justify-content: flex-end;
     background-color: #0b0b0b;
 }
+
 .container{
     line-height: 100px;
     margin-right: 30px;
@@ -166,19 +182,9 @@ header{
 
 /* STILE MAIN SPOTIFY */
 main{
-    width: 100%;
     margin-top: 100px;
-    display: flex;
-    background-color: yellow;
-
+    margin-left: 10%;
 }
-
-.container.music{
-    display: flex;
-    margin: 0;
-
-}
-
 /* FOOTER SPOPTIFY */
 footer {
    position:fixed;
@@ -187,5 +193,5 @@ footer {
    height:100px;
    width:100%;
    background-color: #282828;
-   overflow-y: hidden;
+   z-index: 100;
 }

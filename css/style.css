@@ -127,7 +127,6 @@ aside a{
     display: flex;
     flex-wrap: wrap;
     float: left;
-    overflow: hidden;
 }
 
 /* STILE HEADER SPOTIFY */
@@ -164,9 +163,9 @@ header{
 /* STILE MAIN SPOTIFY */
 main{
     margin-top: 100px;
+    margin-left: 10%;
     width: 100%;
-    height: calc(100vh - 100px);
-    background-color: #121212;
+
 }
 
 .music-sections{
@@ -192,6 +191,22 @@ main{
     color: #b3b3b3;
 }
 
+.titolo-recenti h4{
+    font-size: 25px;
+    padding: 30px;
+}
+
+.band-recenti{
+    display: flex;
+    justify-content: space-around;
+}
+
+.band-recenti-card{
+    width: 250px;
+}
+.band-recenti-card img{
+    width: 100%;
+}
 /* FOOTER SPOTIFY */
 footer {
    position:fixed;

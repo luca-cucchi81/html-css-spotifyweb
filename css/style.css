@@ -394,7 +394,7 @@ audio{
 .footer-right i{
     padding: 0 20px;
     color: #ffffff;
-    transition: 2s ease;
+    transition: 1s ease;
 }
 
 .footer-right i:hover{

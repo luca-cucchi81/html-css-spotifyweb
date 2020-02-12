@@ -335,6 +335,66 @@ footer {
    z-index: 100;
 }
 
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 100px;
+}
+
+.footer-left{
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 100px;
+}
+.footer-left img{
+    width: 60px;
+    height: 60px;
+    margin: 20px 20px;
+
+}
+.footer-left h6{
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer-middle{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+}
+.play-controls{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.play-controls i{
+    padding-right: 30px;
+}
+
+.play-controls i:hover{
+    color: #6ece3b;
+}
+audio{
+    width: 100%;
+}
+
+.footer-right{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-right i{
+    padding: 0 20px;
+    color: #ffffff;
+}
 @media screen and (max-width: 768px) {
     .spoti-aside{
         width: 50px;

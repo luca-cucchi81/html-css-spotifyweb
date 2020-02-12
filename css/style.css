@@ -394,7 +394,14 @@ audio{
 .footer-right i{
     padding: 0 20px;
     color: #ffffff;
+    transition: 2s ease;
 }
+
+.footer-right i:hover{
+    color: #6ece3b;
+    transform: scale(2);
+}
+
 @media screen and (max-width: 768px) {
     .spoti-aside{
         width: 50px;
@@ -422,6 +429,17 @@ audio{
     .titolo-recenti h4{
         margin-top: 100px;
         margin-left: 90px;
+    }
 
+    .footer-container{
+        justify-content: space-around;
+        line-height: 100px;
+    }
+    .play-controls i{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer-middle{
+        width: 60%;
     }
 }

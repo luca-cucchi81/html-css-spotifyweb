@@ -164,27 +164,32 @@ header{
 
 /* STILE MAIN SPOTIFY */
 main{
-    margin-top: 100px;
+    height: calc(100vh - 100px);
     margin-left: 10%;
     width: 100%;
+    overflow-y: auto;
+
 }
 
 .music-sections{
     display: flex;
     flex-wrap: wrap;
-    height: 50px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    height: 60px;
     justify-content: center;
     align-items: center;
 }
 
 .selection{
     margin: 0 15px;
-    padding: 15px 0;
+    padding: 20px 0;
     height: 100%;
 }
 
 .music-sections .selection:hover {
     border-bottom: 4px solid #6ece3b;
+    background-color: lightgrey;
 }
 
 .music-sections a{
@@ -195,7 +200,9 @@ main{
 
 .titolo-recenti h4{
     font-size: 25px;
-    margin: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding: 40px 0;
     color: #ffffff;
 }
 
@@ -211,11 +218,42 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
+
 .band-recenti-card img{
     width: 100%;
     padding-bottom: 15px;
 }
+.cover{
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    background-color: #1abc9c;
+    opacity: 0;
+}
+
+.overlay i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.overlay:hover{
+    transition: .1s ease;
+    opacity: 0.9;
+}
+
 .band-recenti-card h5{
     color: #ffffff;
     font-weight: 700;
@@ -227,6 +265,39 @@ main{
     font-weight: bold;
 }
 
+.titolo-consigli h4{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: #ffffff;
+}
+.titolo-consigli p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #b3b3b3;
+}
+
+.album-consigliati{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 40px;
+    justify-content: flex-start;
+}
+
+.consigliati-card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.consigliati-card img{
+    width: 100%;
+    padding-bottom: 15px;
+}
 
 /* FOOTER SPOTIFY */
 footer {
@@ -237,4 +308,13 @@ footer {
    width:100%;
    background-color: #282828;
    z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+    .spoti-aside{
+        width: 60px;
+    }
+    #hide-element{
+        display: none;
+    }
 }

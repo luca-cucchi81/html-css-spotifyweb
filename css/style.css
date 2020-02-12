@@ -280,12 +280,11 @@ main{
 }
 
 .album-consigliati{
-    width: 40%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-left: 20px;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .consigliati-card{
@@ -320,7 +319,7 @@ main{
     border-radius: 50%;
 }
 #pop-over{
-    height: 100%;
+
     right: 28px;
     background: none;
 }

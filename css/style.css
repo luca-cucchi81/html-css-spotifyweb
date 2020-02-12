@@ -200,7 +200,7 @@ main{
 
 .titolo-recenti h4{
     font-size: 25px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 40px;
     padding: 40px 0;
     color: #ffffff;
@@ -236,8 +236,8 @@ main{
     top: 0;
     right: 0;
     left: 0;
-    bottom:0;
-    background-color: #1abc9c;
+    bottom: 28px;
+    background-color: #282828;
     opacity: 0;
 }
 
@@ -252,7 +252,7 @@ main{
 
 .overlay:hover{
     transition: .1s ease;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .band-recenti-card h5{
@@ -269,13 +269,13 @@ main{
 .titolo-consigli h4{
     font-size: 25px;
     margin-top: 40px;
-    margin-left: 40px;
+    margin-left: 20px;
     color: #ffffff;
 }
 .titolo-consigli p{
     font-size: 16px;
-    margin-top: 10px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
     color: #b3b3b3;
 }
 
@@ -289,6 +289,7 @@ main{
 }
 
 .consigliati-card{
+    position: relative;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -315,6 +316,14 @@ main{
     margin-right: 30px;
 }
 
+#popolari img{
+    border-radius: 50%;
+}
+#pop-over{
+    height: 100%;
+    right: 28px;
+    background: none;
+}
 /* FOOTER SPOTIFY */
 footer {
    position:fixed;

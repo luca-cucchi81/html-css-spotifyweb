@@ -349,6 +349,11 @@ footer {
     justify-content: flex-start;
     line-height: 100px;
 }
+.nowplaying{
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-left img{
     width: 60px;
     height: 60px;
@@ -359,7 +364,12 @@ footer {
     font-size: 14px;
     color: #ffffff;
 }
-
+.footer-left small{
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+}
 .footer-middle{
     width: 30%;
     display: flex;

@@ -447,6 +447,9 @@ audio{
     .fas.fa-book{
         padding-left: 3px;
     }
+    .titolo-consigli{
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -459,5 +462,13 @@ audio{
     }
     #foto-me{
         padding-left: 15px;
+    }
+
+    .titolo-consigli{
+        text-align: center;
+    }
+
+    .album-consigliati{
+        justify-content: center;
     }
 }

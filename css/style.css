@@ -373,6 +373,7 @@ footer {
 .footer-middle{
     width: 30%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 20%;
@@ -400,7 +401,7 @@ audio{
 .footer-right{
     width: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .footer-right i{
@@ -483,8 +484,6 @@ audio{
     .album-consigliati{
         justify-content: center;
     }
-
-
 }
 
 @media screen and (min-width: 1200px){

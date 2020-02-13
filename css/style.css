@@ -383,6 +383,7 @@ footer {
 }
 audio{
     width: 100%;
+    border-radius: 10px;
 }
 
 .footer-right{
@@ -441,5 +442,22 @@ audio{
     }
     .footer-middle{
         width: 60%;
+    }
+
+    .fas.fa-book{
+        padding-left: 3px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .spoti-aside{
+        width: 120px;
+    }
+
+    #hide-me{
+        display: none;
+    }
+    #foto-me{
+        padding-left: 15px;
     }
 }

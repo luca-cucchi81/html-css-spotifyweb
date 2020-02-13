@@ -456,7 +456,9 @@ audio{
     .spoti-aside{
         width: 120px;
     }
-
+    #hide-desktop{
+        display: none;
+    }
     #hide-me{
         display: none;
     }
@@ -470,5 +472,11 @@ audio{
 
     .album-consigliati{
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #hide-desktop{
+        display: none;
     }
 }

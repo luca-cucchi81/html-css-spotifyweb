@@ -186,6 +186,7 @@ main{
     margin: 0 15px;
     padding: 20px 0;
     height: 100%;
+    border-bottom: 4px solid transparent;
 }
 
 .music-sections .selection:hover {
